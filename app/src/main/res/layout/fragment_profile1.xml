@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop ="20dp"
-        android:text="Guddu Bhasme"
+        android:text="SSI Student"
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold">
@@ -42,14 +42,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Co-Founder at Material Design"
+        android:text="Mobile developement"
         android:textColor="#737373"
         android:textSize="18dp">
     </TextView>
 
     <LinearLayout
         android:layout_marginTop="20dp"
-        android:layout_width="220dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity='center'
         android:orientation="horizontal">
@@ -61,6 +61,12 @@
             android:background="@android:color/transparent"
             android:src="@drawable/baseline_call_60">
         </ImageButton>
+
+        <Button
+            android:id="@+id/buttonlgout"
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:text="Log OUT" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -94,7 +100,7 @@
             android:drawableLeft="@drawable/baseline_call_24"
             android:drawablePadding="10dp"
             android:fontFamily="sans-serif-thin"
-            android:text="1234567890"
+            android:text="0606660524"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold">
@@ -115,7 +121,7 @@
         android:drawableLeft="@drawable/baseline_email_24"
         android:drawablePadding="10dp"
         android:fontFamily="sans-serif-thin"
-        android:text ="iamguddu37@gmail.com"
+        android:text ="AKA_Student@uit.ac.com"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold">
@@ -137,12 +143,14 @@
         android:drawablePadding="10dp"
         android:fontFamily="sans-serif-thin"
         android:paddingBottom="20dp"
-        android:text="US-Street 28-No 34"
+        android:text="Ensa Kenitra Ibn tofail"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold">
     </TextView>
 
     </LinearLayout>
+
 </LinearLayout>
+
 </LinearLayout>
