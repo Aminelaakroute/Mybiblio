@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crud_Add_Page">
+
+    <!-- Title TextView -->
+
+    <!-- Title TextInputEditText -->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="#6750A3"
+        android:backgroundTint="#6750A3"
+        android:text="Book"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TitleOfPage"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="  Edit Book."
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/TitleOfBook"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:hint="Title of Book"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleOfPage"
+        android:background="@drawable/border_background"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Book_Category"
+        android:layout_width="413dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_background"
+        android:hint="Category"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleOfBook" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Author"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:hint="Author"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/Book_Category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_background"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ISBN"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:hint="International Standard Book Number"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/Author"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_background"/>
+
+    <!-- Description TextInputEditText -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/DescriptionOfBook"
+        android:layout_width="416dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_background"
+        android:hint="Description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ISBN" />
+
+    <!-- Save Button (FloatingActionButton) -->
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="330dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="25dp"
+        android:drawableTintMode="add"
+        android:text="Save Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

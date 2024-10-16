@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <!-- Book Cover Image -->
+        <ImageView
+            android:id="@+id/bookCoverImage"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_library_books_24" />
+
+        <!-- Book Title -->
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bookCoverImage"
+            android:layout_marginStart="16dp"
+            android:text="Book Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Book Author -->
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookTitle"
+            android:layout_toEndOf="@id/bookCoverImage"
+            android:layout_marginStart="16dp"
+            android:text="Author"
+            android:textSize="14sp" />
+
+        <!-- Book isbn -->
+        <TextView
+            android:id="@+id/bookISBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookAuthor"
+            android:layout_toEndOf="@id/bookCoverImage"
+            android:layout_marginStart="16dp"
+            android:text="Author"
+            android:textSize="14sp" />
+
+        <!-- Book Categories -->
+        <TextView
+            android:id="@+id/bookCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookISBN"
+            android:layout_toEndOf="@id/bookCoverImage"
+            android:layout_marginStart="16dp"
+            android:text="Author"
+            android:textSize="14sp" />
+
+        <!-- Book Description -->
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookCoverImage"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Author"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
